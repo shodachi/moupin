@@ -1,0 +1,84 @@
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+     from {
+         -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
+     to {
+         -webkit-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+         transform: rotate(360deg);
+     }
+ }
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes pulsating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: scale(0.8, 0.8);
+        -o-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        -webkit-transform: scale(2, 2);
+        -o-transform: scale(2, 2);
+        transform: scale(2, 2);
+    }
+}
+@keyframes pulsating {
+    from {
+        -ms-transform: scale(0.8, 0.8);
+        -moz-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+        -o-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        -ms-transform: scale(2, 2);
+        -moz-transform: scale(2, 2);
+        -webkit-transform: scale(2, 2);
+        -o-transform: scale(2, 2);
+        transform: scale(2, 2);
+    }
+}
+
+.pulsating {
+    -webkit-animation: pulsating 1s linear infinite;
+    -moz-animation: pulsating 1s linear infinite;
+    -ms-animation: pulsating 1s linear infinite;
+    -o-animation: pulsating 1s linear infinite;
+    animation: pulsating 1s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.rotating_fast{
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+
